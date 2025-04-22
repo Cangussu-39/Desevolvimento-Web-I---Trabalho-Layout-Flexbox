@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Flexbox</title>
+<style>
+body {
+margin: 0;
+font-family: Arial;
+background-color:#f4f4f4;
+}
+
+.container {
+display:flex;
+flex-direction: column;
+min-height:100vh;
+}
+
+header {
+background-color: #033504;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.main {
+display:flex;
+flex:1;
+}
+
+.menu {
+background-color:rgb(32, 22, 2);
+width:20%;
+padding:20px;
+color:white;
+}
+
+.content {
+background:#008cff;
+width:80%;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.resumos {
+display:flex;
+gap:20px;
+}
+
+.resumo {
+background-color:#350717;
+color:white;
+padding:10px;
+flex:1;
+text-align:center;
+border-radius:5px;
+}
+
+.cards {
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card {
+background-color:#56385c;
+color:white;
+padding:10px;
+flex:1;
+min-width:100px;
+text-align:center;
+border-radius:5px;
+}
+
+footer {
+background-color: #66608b;
+color: white;
+text-align: center;
+padding: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+Exemplo de Cabeçalho
+</header>
+
+<div class="main">
+<aside class="menu">
+Exemplo de Menu Lateral
+</aside>
+
+<section class="content">
+<div class="resumos">
+<div class="resumo">Resumo 1</div>
+<div class="resumo">Resumo 2</div>
+<div class="resumo">Resumo 3</div>
+</div>
+
+<div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+    </div>
+    </section>
+    </div>
+    
+    <footer>
+    Exemplo de Rodapé
+    </footer>
+    </div>
+    </body>
+    </html>
